@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "cplx.h"
-#include "mytestPlatform.h"
+#include "../mytestPlatform.h"
 
 
 int mytest_cplx_main(void)

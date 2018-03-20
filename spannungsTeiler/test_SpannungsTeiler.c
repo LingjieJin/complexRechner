@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "cplx.h"
-#include "mytestPlatform.h"
+#include "../cplx/cplx.h"
+#include "../mytestPlatform.h"
 
 int mytest_Spannung_main(void)
 {

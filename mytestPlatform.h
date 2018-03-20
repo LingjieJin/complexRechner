@@ -3,6 +3,6 @@
 
 int my_spannung_main(void);
 int mytest_cplx_main(void);
-int mytest_cplx_main(void);
+int mytest_digitalFilter_main(void);
 
 #endif _mytestPlatform_h_

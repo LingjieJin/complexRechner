@@ -1,6 +1,6 @@
 #include <math.h>
-#include "cplx.h"
-#include "mytestPlatform.h"
+#include "../cplx/cplx.h"
+#include "../mytestPlatform.h"
 
 int my_spannung_main(void)
 {
@@ -22,7 +22,7 @@ int my_spannung_main(void)
 		z1.im = 0;
 		z2.re = R2;
 		z2.im = w * L + 1 / (w * C);
-		
+
 		auswert = 20 * log10(betrag(c_div(z2, c_add(z1, z2))));
 
 		printf("%.1lf\t\t%.1lf\n", f_start_Hz, auswert);
