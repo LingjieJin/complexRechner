@@ -7,8 +7,11 @@ double BP_Filter01(double x)
     /* y(n) = D0(x(n-2) - x(n)) - C0*y(n-2) - C1*y(n-1) */
     static double x_1=0, x_2=0, y_1=0, y_2=0;
     double y;
+
     /* double D0=-0.363323,  C0=0.818339, C1=1.744683; */
-    double D0=-0.031348,  C0=0.984326, C1=-1.983834;
+    /* double D0=-0.031348,  C0=0.984326, C1=-1.983834; */
+
+    double D0 = -0.109755, C0= 0.780490, C1 = -1.668733;
 
     y = D0 *  (x_2 - x) - C0* y_2 - C1 *  y_1;
     x_2 = x_1;
@@ -50,11 +53,12 @@ int LoadArray(double *a, int n, char *DateiName)
     return 0;
 }
 
-double analy(double x, double a)
+double TP_Filter(double x)
 {
     /* y(n) = (1-a)*x(n) + a*y(n-1) */
     static double y_1=0;
     double y;
+    double a = 0.5;
 
     y = (1-a) * x + a * y_1;
     y_1 = y;
