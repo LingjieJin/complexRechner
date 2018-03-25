@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>snd_lib: sndWaveHeader_t Strukturreferenz</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Hauptseite</span></a></li>
+      <li class="current"><a href="classes.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>Alphabetische&nbsp;Liste</span></a></li>
+      <li><a href="annotated.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="functions.html"><span>Datenstruktur-Elemente</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>sndWaveHeader_t Strukturreferenz</h1><!-- doxytag: class="sndWaveHeader_t" --><code>#include &lt;<a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Datenfelder</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#51e35db00c008fcdff227a3adecaf235">chunk_type</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#acd221c12914f1ffe946335deaf1d23b">data_chunk</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#dd71afe7a81386cb6f1dfeac246de005">data_length</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#00ad32cf1df8248882f9c32b25b79ab4">format</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#8d9fabd35857674a1905ef769761bd9b">length</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#d41061a5b39ecd28cd57398cd42e2e6d">main_chunk</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#82bb5eac3699758f6473adc3944f66fb">nBitsPerSample</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#a2f9aec76ab7adadd0adaa69a38e0745">nBytesPerSample</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#e64f57cae494020e51d71bdaeca09211">nBytesPerSec</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#23ceabec86a4af1320982bbac1fec8b8">nChannels</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#e002e034c76437476178acf4a42f0695">nSamplesPerSec</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#e75931f0bf83cf03320e57f7f9cb7e29">sub_chunk</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html#171119ef8f46e066bdda4a9a2c28471d">sub_length</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Ausführliche Beschreibung</h2>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Struktur zum Auslesen des Waveheaders</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>main_chunk</em>&nbsp;</td><td>- Textinhalt "RIFF" </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>length</em>&nbsp;</td><td>- Gesamtlaenge der Datei in Bytes </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>chunk_type</em>&nbsp;</td><td>- Textinhalt "WAVE" bei Wave-Dateien </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sub_chunk</em>&nbsp;</td><td>- Textinhalt "fmt_" </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sub_length</em>&nbsp;</td><td>- Laenge sub_chunk, immer 16 Bytes </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>format</em>&nbsp;</td><td>- 1 = PCM [z.Z. nur PCM eingesetzt, also immer 1] </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nChannels</em>&nbsp;</td><td>- 1 = mono </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nChannels</em>&nbsp;</td><td>- 2 = stereo </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nSamplesPerSec</em>&nbsp;</td><td>- Abtastfrequenz der Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBytesPerSec</em>&nbsp;</td><td>- Datendurchsatz pro Sekunde </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBytesPerSample</em>&nbsp;</td><td>- 1 = 8 Byte per Sample [8-Bit-Mono-Datei] </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBytesPerSample</em>&nbsp;</td><td>- 2 = 8 Byte per Sample [8-Bit-Stereo- oder 16-Bit-Mono-Datei] </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBytesPerSample</em>&nbsp;</td><td>- 4 = 16 Byte per Sample [16-Bit-Stereo-Datei] </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBitsPerSample</em>&nbsp;</td><td>- 8 = 8 Bit per Sample </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBitsPerSample</em>&nbsp;</td><td>- 12 = 16 Bit per Sample (Soundcard has 12 Bit, but 16 Bit stored) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nBitsPerSample</em>&nbsp;</td><td>- 16 = 16 Bit per Sample </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_chunk</em>&nbsp;</td><td>- Kennung Datenbereich "data" </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_length</em>&nbsp;</td><td>- Laenge des Datenblockes in Bytes </td></tr>
+  </table>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00356">356</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+<hr><h2>Dokumentation der Datenelemente</h2>
+<a class="anchor" name="51e35db00c008fcdff227a3adecaf235"></a><!-- doxytag: member="sndWaveHeader_t::chunk_type" ref="51e35db00c008fcdff227a3adecaf235" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#51e35db00c008fcdff227a3adecaf235">sndWaveHeader_t::chunk_type</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Textinhalt "WAVE" </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00359">359</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="acd221c12914f1ffe946335deaf1d23b"></a><!-- doxytag: member="sndWaveHeader_t::data_chunk" ref="acd221c12914f1ffe946335deaf1d23b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#acd221c12914f1ffe946335deaf1d23b">sndWaveHeader_t::data_chunk</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Testinhalt "data" </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00373">373</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="dd71afe7a81386cb6f1dfeac246de005"></a><!-- doxytag: member="sndWaveHeader_t::data_length" ref="dd71afe7a81386cb6f1dfeac246de005" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#dd71afe7a81386cb6f1dfeac246de005">sndWaveHeader_t::data_length</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Leange Datenblock in Bytes </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00374">374</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="00ad32cf1df8248882f9c32b25b79ab4"></a><!-- doxytag: member="sndWaveHeader_t::format" ref="00ad32cf1df8248882f9c32b25b79ab4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short <a class="el" href="structsndWaveHeader__t.html#00ad32cf1df8248882f9c32b25b79ab4">sndWaveHeader_t::format</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>1 = PCM </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00362">362</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="8d9fabd35857674a1905ef769761bd9b"></a><!-- doxytag: member="sndWaveHeader_t::length" ref="8d9fabd35857674a1905ef769761bd9b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#8d9fabd35857674a1905ef769761bd9b">sndWaveHeader_t::length</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Gesamtlaenge der Datei </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00358">358</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="d41061a5b39ecd28cd57398cd42e2e6d"></a><!-- doxytag: member="sndWaveHeader_t::main_chunk" ref="d41061a5b39ecd28cd57398cd42e2e6d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#d41061a5b39ecd28cd57398cd42e2e6d">sndWaveHeader_t::main_chunk</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Textinhalt "RIFF" </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00357">357</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="82bb5eac3699758f6473adc3944f66fb"></a><!-- doxytag: member="sndWaveHeader_t::nBitsPerSample" ref="82bb5eac3699758f6473adc3944f66fb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short <a class="el" href="structsndWaveHeader__t.html#82bb5eac3699758f6473adc3944f66fb">sndWaveHeader_t::nBitsPerSample</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>8 = 8 Bit per Sample </li>
+<li>12 = 16 Bit per Sample </li>
+<li>16 = 16 Bit per Sample </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00370">370</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="a2f9aec76ab7adadd0adaa69a38e0745"></a><!-- doxytag: member="sndWaveHeader_t::nBytesPerSample" ref="a2f9aec76ab7adadd0adaa69a38e0745" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short <a class="el" href="structsndWaveHeader__t.html#a2f9aec76ab7adadd0adaa69a38e0745">sndWaveHeader_t::nBytesPerSample</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>1 = 8Bit-Mono </li>
+<li>2 = 8Bit-St. oder 16-Bit-Mono </li>
+<li>4 = 16Bit-Stereo </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00367">367</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e64f57cae494020e51d71bdaeca09211"></a><!-- doxytag: member="sndWaveHeader_t::nBytesPerSec" ref="e64f57cae494020e51d71bdaeca09211" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#e64f57cae494020e51d71bdaeca09211">sndWaveHeader_t::nBytesPerSec</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Datendurchsatz pro Sekunde </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00366">366</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="23ceabec86a4af1320982bbac1fec8b8"></a><!-- doxytag: member="sndWaveHeader_t::nChannels" ref="23ceabec86a4af1320982bbac1fec8b8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short <a class="el" href="structsndWaveHeader__t.html#23ceabec86a4af1320982bbac1fec8b8">sndWaveHeader_t::nChannels</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>1 = MONO; </li>
+<li>2 = STEREO </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00363">363</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e002e034c76437476178acf4a42f0695"></a><!-- doxytag: member="sndWaveHeader_t::nSamplesPerSec" ref="e002e034c76437476178acf4a42f0695" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#e002e034c76437476178acf4a42f0695">sndWaveHeader_t::nSamplesPerSec</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Abtastfrequenz in Hz </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00365">365</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e75931f0bf83cf03320e57f7f9cb7e29"></a><!-- doxytag: member="sndWaveHeader_t::sub_chunk" ref="e75931f0bf83cf03320e57f7f9cb7e29" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#e75931f0bf83cf03320e57f7f9cb7e29">sndWaveHeader_t::sub_chunk</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Textinhalt "fmt_" </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00360">360</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="171119ef8f46e066bdda4a9a2c28471d"></a><!-- doxytag: member="sndWaveHeader_t::sub_length" ref="171119ef8f46e066bdda4a9a2c28471d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="structsndWaveHeader__t.html#171119ef8f46e066bdda4a9a2c28471d">sndWaveHeader_t::sub_length</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<ul>
+<li>Laenge sub_chunk, 16 Bytes </li>
+</ul>
+
+<p>Definiert in Zeile <a class="el" href="snd__lib_8h-source.html#l00361">361</a> der Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+
+</div>
+</div><p>
+<hr>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+<li><a class="el" href="snd__lib_8h-source.html">snd_lib.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Erzeugt am Thu Apr 19 15:53:05 2012 für snd_lib von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

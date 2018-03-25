@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>snd_lib: snd lib</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li class="current"><a href="main.html"><span>Hauptseite</span></a></li>
+      <li><a href="classes.html"><span>Datenstrukturen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>snd lib</h1>
+<p>
+<h3 align="center">0.1 </h3><h2><a class="anchor" name="intro">
+Einfuehrung</a></h2>
+Dieses Modul stellt Funktionen zum Betrieb der Soundkarte unter Linux und Windows zur Verfuegung. Zugriff auf WAV-Dateien wird ebenfalls unterstuetzt.<h2><a class="anchor" name="install">
+Benutzung</a></h2>
+Um das Modul zu benutzen muss die Datei <a class="el" href="snd__lib_8h.html">snd_lib.h</a> per ''include'' eingebunden und die Quellcodedate snd_lib.c in das Projekt aufgenommen, compiliert und gelinkt werden.<p>
+Das benutzte Betriebssystem (Linux oder Windows) muss in der Datei 'snd_codecontrol.h' eingetragen werden. Siehe Beschreibung in dieser Datei. Die Voreinstellung ist Windows.<p>
+Die exportierten Datenstrukturen und Funktionen sind in der Datei <a class="el" href="snd__lib_8h.html">snd_lib.h</a> dokumentiert.<h2><a class="anchor" name="Einige">
+Hinweise</a></h2>
+Es wird nur eine Abtastfrequenz (44100Hz) und ein Datenformat (16 Bit mit Vorzeichen, d.h. ''signed short'') unterstuetzt. Einstellbar ist lediglich der Aufnahme- Wiedergabemodus (''SND_READ_ONLY'', ''SND_WRITE_ONLY'' oder ''SND_READ_WRITE'') sowie die Anzahl der Kanaele (''SND_MONO'' oder ''SND_STEREO''). Die Datenquelle (Mic, Line) kann nicht eingestellt werden, dies ist mit den Mixer-Applikationen des Betriebssystems zu machen.<p>
+Bug-Reports, Gejammer, troestende Worte und hilfreiche Kommentare bitte an <a href="mailto:ernst.forgber@fh-hannover.de">ernst.forgber@fh-hannover.de</a> schicken. </div>
+<hr size="1"><address style="text-align: right;"><small>Erzeugt am Thu Apr 19 15:53:05 2012 für snd_lib von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

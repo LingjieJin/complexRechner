@@ -1,0 +1,1094 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>snd_lib: snd_lib.h-Dateireferenz</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Erzeugt von Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Hauptseite</span></a></li>
+      <li><a href="classes.html"><span>Datenstrukturen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>snd_lib.h-Dateireferenz</h1><code>#include &quot;snd_codecontrol.h&quot;</code><br>
+<code>#include &lt;stdio.h&gt;</code><br>
+<code>#include &lt;stdlib.h&gt;</code><br>
+<code>#include &lt;windows.h&gt;</code><br>
+<code>#include &lt;limits.h&gt;</code><br>
+<code>#include &lt;mmsystem.h&gt;</code><br>
+
+<p>
+<div class="dynheader">
+Include-Abhängigkeitsdiagramm für snd_lib.h:</div>
+<div class="dynsection">
+<p><center><img src="snd__lib_8h__incl.png" border="0" usemap="#snd_lib.h_map" alt=""></center>
+</div>
+
+<p>
+<a href="snd__lib_8h-source.html">gehe zum Quellcode dieser Datei</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Datenstrukturen</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndMono16__t.html">sndMono16_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndMono8__t.html">sndMono8_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndStereo16__t.html">sndStereo16_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndStereo8__t.html">sndStereo8_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Funktionen</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SndDevice_t *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#76a06221ce9d8b3437d79912705dc7a0">sndClose</a> (SndDevice_t *sd)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SndDevice_t *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#c6bde40d15c6a60600e18e4c6ec77ce6">sndOpen</a> (int rw_mode, int mono_stereo)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#c5c62b469c04a05588c4dd5034b6d929">sndRead</a> (SndDevice_t *sd, short *buf, int buf_elements)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#560fbab60a4a71f42c334ac129572c8b">sndWAVGetNumberOfSamples</a> (<a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a> wh)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#396095ddfaa7751ba58f842897a7faf8">sndWAVPlaySound</a> (char *Filename)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#a11738d497b2eb09a78699aaa68967f7">sndWAVReadFileHeader</a> (FILE *fp, <a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a> *wh)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#91f25a866bc3fa0644126dfa703fd863">sndWAVReadSampleMono16</a> (FILE *fp, <a class="el" href="structsndMono16__t.html">sndMono16_t</a> *x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#55e8b650e99b9bb6ead4a8aff64e4de5">sndWAVReadSampleMono8</a> (FILE *fp, <a class="el" href="structsndMono8__t.html">sndMono8_t</a> *x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#489a7e1508ba71d4f8e998e74adb5d23">sndWAVReadSampleStereo16</a> (FILE *fp, <a class="el" href="structsndStereo16__t.html">sndStereo16_t</a> *x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#7d32f371553b147f3b03e1fad5004d3d">sndWAVReadSampleStereo8</a> (FILE *fp, <a class="el" href="structsndStereo8__t.html">sndStereo8_t</a> *x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#1d1d719e2fee3951c891f4f08ae9d057">sndWAVWriteFileHeader</a> (FILE *fp, <a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a> wh)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#4d702223b436290f12cf745b2cbecc06">sndWAVWriteSampleMono16</a> (FILE *fp, <a class="el" href="structsndMono16__t.html">sndMono16_t</a> x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#5ce04728bef45623fcbc68f2a622d9ef">sndWAVWriteSampleMono8</a> (FILE *fp, <a class="el" href="structsndMono8__t.html">sndMono8_t</a> x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#61bf5086dcfa9a798d93dac34d278479">sndWAVWriteSampleStereo16</a> (FILE *fp, <a class="el" href="structsndStereo16__t.html">sndStereo16_t</a> x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#bc9c263172cf9d0460fc260045f07f85">sndWAVWriteSampleStereo8</a> (FILE *fp, <a class="el" href="structsndStereo8__t.html">sndStereo8_t</a> x)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="snd__lib_8h.html#14c6c15584bcf0ee45f5e538da911745">sndWrite</a> (SndDevice_t *sd, short *buf, int buf_elements)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Ausführliche Beschreibung</h2>
+<dl class="user" compact><dt><b>Project : Sound Utilities, Linux / Windows</b></dt><dd></dd></dl>
+<dl class="user" compact><dt><b>Module : low level sound device prgramming</b></dt><dd></dd></dl>
+<dl class="user" compact><dt><b>Author : Fgb</b></dt><dd></dd></dl>
+<dl class="user" compact><dt><b>Department: E14</b></dt><dd></dd></dl>
+<dl class="user" compact><dt><b>Company : Fachhochschule Hannover - University of Applied</b></dt><dd>Sciences and Arts</dd></dl>
+<dl class="user" compact><dt><b>History :</b></dt><dd><div class="fragment"><pre class="fragment">
+   Version | Date        | Author        | Change Description
+   0.0     | 27.08. 2007 | Fgb           | First Version, Linux / Win32
+   </pre></div> </dd></dl>
+
+<p>Definiert in Datei <a class="el" href="snd__lib_8h-source.html">snd_lib.h</a>.</p>
+<hr><h2>Dokumentation der Funktionen</h2>
+<a class="anchor" name="76a06221ce9d8b3437d79912705dc7a0"></a><!-- doxytag: member="snd_lib.h::sndClose" ref="76a06221ce9d8b3437d79912705dc7a0" args="(SndDevice_t *sd)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SndDevice_t* sndClose           </td>
+          <td>(</td>
+          <td class="paramtype">SndDevice_t *&nbsp;</td>
+          <td class="paramname"> <em>sd</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Beschreibung:</b></dt><dd>Schliesst die Soundkarte. Diese Funktion muss nach Abschluss der Benutzung der Soundkarte einmalig aufgerufen werden (gibt zuvor allozierten intern genutzten Speicher frei).</dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#c6bde40d15c6a60600e18e4c6ec77ce6">sndOpen</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sd</em>&nbsp;</td><td>- IN/OUT, Zeiger auf Geraetestruktur der geoffneten Soundkarte</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>NULL</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+    ...
+    SndDevice_t *psd;
+
+    psd = sndOpen(SND_READ_WRITE, SND_STEREO);
+    ...
+    psd = sndClose(psd);
+
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="c6bde40d15c6a60600e18e4c6ec77ce6"></a><!-- doxytag: member="snd_lib.h::sndOpen" ref="c6bde40d15c6a60600e18e4c6ec77ce6" args="(int rw_mode, int mono_stereo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SndDevice_t* sndOpen           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rw_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>mono_stereo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Beschreibung:</b></dt><dd>Oeffnet die Soundkarte im gewaehlten Modus. Das Datenformat ist 16Bit mit Vorzeichen (signed short), die Abtastrate ist 44100kHz. Diese Funktion muss vor der Benutzung der Soundkarte einmalig aufgerufen werden (alloziert auch intern genutzten Speicher).</dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#76a06221ce9d8b3437d79912705dc7a0">sndClose</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>rw_mode</em>&nbsp;</td><td>- IN, Datenrichtung: SND_READ_ONLY,SND_WRITE_ONLY oder SND_READ_WRITE </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mono_stereo</em>&nbsp;</td><td>- IN, Kanalanzahl: SND_MONO oder SND_STEREO</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Zeiger</em>&nbsp;</td><td>auf Struktur SndDevice_t mit Daten zur Soundkarte wenn kein Fehler auftritt, sonst NULL bei Fehler. </td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd>Die Soundkarte wird zum Lesen und Schreiben geoeffnet. In einer Schleife werden Daten aufgenommen und gleich wieder ausgegeben. <div class="fragment"><pre class="fragment">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "snd_lib.h"
+#define N 2048
+
+int main(void)
+{   SndDevice_t *psd;
+    short buf[N];
+    int j;
+
+    psd = sndOpen(SND_READ_WRITE, SND_STEREO);
+    for(j=0; j&lt;500; j++)
+    {   printf("loop counter:%d\n", j);
+        if(N != sndRead(psd, buf, N))
+        {   printf("win_sndRead crashed...");
+        }
+        if(N != sndWrite(psd, buf, N))
+        {   printf("sndWrite crashed...");
+        }
+    }
+    psd = sndClose(psd);
+    return 0;
+}
+  </pre></div> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c5c62b469c04a05588c4dd5034b6d929"></a><!-- doxytag: member="snd_lib.h::sndRead" ref="c5c62b469c04a05588c4dd5034b6d929" args="(SndDevice_t *sd, short *buf, int buf_elements)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndRead           </td>
+          <td>(</td>
+          <td class="paramtype">SndDevice_t *&nbsp;</td>
+          <td class="paramname"> <em>sd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&nbsp;</td>
+          <td class="paramname"> <em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buf_elements</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Beschreibung:</b></dt><dd>Liest blockierend von der Soundkarte. Das Datenformat ist 16Bit mit Vorzeichen (signed short), die Abtastrate ist 44100kHz. Mono-Daten liegen nacheinander im short-Feld, Stereo-Daten werden abwechselnd Links,Rechts ins Feld geschrieben. Ein Stereo-Wertepaar (Links,Rechts) zaehlt als zwei Elemente, da es zwei short-Speicherplaetze belegt.</dd></dl>
+Linux: die Anzahl der gelesenen Elemente ist nicht beliebig, auf manchen Rechner kam es zu Abstuerzen, wenn die Puffergroesse kleiner war als der intern Soundkartenpuffer. Als guenstig hat sich eine Puffergroesse von 4096 Byte oder vielfache davon erwiesen. Das short-Feld sollte also mindestens 2048 Elemente haben.<p>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#14c6c15584bcf0ee45f5e538da911745">sndWrite</a>, <a class="el" href="snd__lib_8h.html#c6bde40d15c6a60600e18e4c6ec77ce6">sndOpen</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sd</em>&nbsp;</td><td>- Zeiger auf Geraetestruktur der geoffneten Soundkarte </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buf</em>&nbsp;</td><td>- Zeiger auf Puffer fuer die zu lesenden Daten </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buf_elements</em>&nbsp;</td><td>- Anzahl der Speicherplaetze im short-Feld</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Anzahl</em>&nbsp;</td><td>der gelesenen Feldelemente oder negative Zahl bei Fehler.</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd>Die Soundkarte wird zum Lesen und Schreiben geoeffnet. In einer Schleife werden Daten aufgenommen und gleich wieder ausgegeben. <div class="fragment"><pre class="fragment">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "snd_lib.h"
+#define N 2048
+
+int main(void)
+{   SndDevice_t *psd;
+    short buf[N];
+    int j;
+
+    psd = sndOpen(SND_READ_WRITE, SND_STEREO);
+    for(j=0; j&lt;500; j++)
+    {   printf("loop counter:%d\n", j);
+        if(N != sndRead(psd, buf, N))
+        {   printf("win_sndRead crashed...");
+        }
+        if(N != sndWrite(psd, buf, N))
+        {   printf("sndWrite crashed...");
+        }
+    }
+    psd = sndClose(psd);
+    return 0;
+}
+  </pre></div> </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="560fbab60a4a71f42c334ac129572c8b"></a><!-- doxytag: member="snd_lib.h::sndWAVGetNumberOfSamples" ref="560fbab60a4a71f42c334ac129572c8b" args="(sndWaveHeader_t wh)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long sndWAVGetNumberOfSamples           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a>&nbsp;</td>
+          <td class="paramname"> <em>wh</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion ermittelt die Anzahl der Abtastwerte bzw. Abtastwertepaare (Stereo). Im Header steht nur die Laenge der Daten in Bytes. Hier wird daraus in Abhaengigkeit vom Fomat (8/16 Bit, Mono/Stereo) die Anzahl der Werte / Wertepaare ermittelt.</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>wh</em>&nbsp;</td><td>- IN wave-Header vom Typ WaveHeader_t</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Anzahl</em>&nbsp;</td><td>der Abtastwerte / Abtastwertepaare , 0 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndStereo16_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleStereo16(fp, &amp;x))
+      { puts("error in sndWAVReadSampleStereo16");
+      }
+      // Abtastwertepaar verarbeiten...
+      if(0!=sndWAVWriteSampleStereo16(fp_out, x))
+      { puts("error in sndWAVReadSampleStereo16");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="396095ddfaa7751ba58f842897a7faf8"></a><!-- doxytag: member="snd_lib.h::sndWAVPlaySound" ref="396095ddfaa7751ba58f842897a7faf8" args="(char *Filename)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVPlaySound           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>Filename</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Liest die Sounddaten aus der angegebenen Datei in ein Feld, oeffnet die Soundkarte und stellt Abtastrate und Datenformat der Soundkarte so ein, wie es die WAV Datei vorgibt. Die Funktion kopiert das Feld auf die Soundkarte. Die Soundkarte darf vorher noch nicht geoeffnet sein, am Ende wird sie wieder geschlossen.</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd><ul>
+<li></li>
+</ul>
+</dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Filename</em>&nbsp;</td><td>- IN, Zeiger auf eine Zeichenkette, Dateiname</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+    char fileName[256];
+    puts("File?");
+    gets(fileName);
+    if(0!=sndWAVPlaySound(fileName))
+    {  puts("error in sndWAVPlaySound()");
+       printf("cannot open file:'%s'\n", fileName);
+       return -1;
+    }
+    fflush(stdin);
+    getchar();    // warten, bis Abspielen fertig ist
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="a11738d497b2eb09a78699aaa68967f7"></a><!-- doxytag: member="snd_lib.h::sndWAVReadFileHeader" ref="a11738d497b2eb09a78699aaa68967f7" args="(FILE *fp, sndWaveHeader_t *wh)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVReadFileHeader           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>wh</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion liest den Header aus der Wave-Datei mit Hilfe der Struktur <a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a>.</dd></dl>
+<dl class="user" compact><dt><b>Note: Diese Funktion geht davon aus, dass es nur einen</b></dt><dd>Format-Chunk und einen Data-Chunk der Wave-Datei gibt. Das trifft nicht fuer jede Datei zu. In einer verbesserten Version dieser Funktion muesste man den Datei-Header nach dem Format-Chunk und dem Data-Chunk durchsuchen und ggf. weitere Chunks ueberlesen.</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#396095ddfaa7751ba58f842897a7faf8">sndWAVPlaySound()</a></li>
+</ul>
+</dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#1d1d719e2fee3951c891f4f08ae9d057">sndWAVWriteFileHeader()</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf die bereits geoeffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>wh</em>&nbsp;</td><td>- IN/OUT, Zeiger auf Struktur der Daten des Headers der Wavedatei</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+  sndWaveHeader_t wh;
+  FILE *fp;
+  ...
+  if(NULL == (fp = fopen("madonna.wav","rb")))
+  {  printf("error: cannot open file\n");
+     return -1;
+  }
+  if(0!=sndWAVReadFileHeader(fp, &amp;wh))
+    puts("error in sndWAVReadFileHeader");
+  printf("Abtastfrequenz: %d\n" , wh.nSamplesPerSec);
+  ...
+  fclose(fp);
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="91f25a866bc3fa0644126dfa703fd863"></a><!-- doxytag: member="snd_lib.h::sndWAVReadSampleMono16" ref="91f25a866bc3fa0644126dfa703fd863" args="(FILE *fp, sndMono16_t *x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVReadSampleMono16           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndMono16__t.html">sndMono16_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion liest ein 16Bit Mono Sample aus Wavedatei ein</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#4d702223b436290f12cf745b2cbecc06">sndWAVWriteSampleMono16</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>_ IN/OUT Zeiger auf Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0,:</em>&nbsp;</td><td>ok, -1: error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndMono16_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleMono16(fp, &amp;x))
+      { puts("error in sndWAVReadSampleMono16");
+      }
+      // Abtastwert verarbeiten...
+      if(0!=sndWAVWriteSampleMono16(fp_out, x))
+      { puts("error in sndWAVWriteSampleMono16");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="55e8b650e99b9bb6ead4a8aff64e4de5"></a><!-- doxytag: member="snd_lib.h::sndWAVReadSampleMono8" ref="55e8b650e99b9bb6ead4a8aff64e4de5" args="(FILE *fp, sndMono8_t *x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVReadSampleMono8           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndMono8__t.html">sndMono8_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion liest ein 8Bit Mono Sample aus Wavedatei ein</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#5ce04728bef45623fcbc68f2a622d9ef">sndWAVWriteSampleMono8</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>_ IN/OUT Zeiger auf Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0,:</em>&nbsp;</td><td>ok, -1: error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndMono8_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleMono8(fp, &amp;x))
+      { puts("error in sndWAVReadSampleMono8");
+      }
+      // Abtastwert verarbeiten...
+      if(0!=sndWAVWriteSampleMono8(fp_out, x))
+      { puts("error in sndWAVWriteSampleMono8");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="489a7e1508ba71d4f8e998e74adb5d23"></a><!-- doxytag: member="snd_lib.h::sndWAVReadSampleStereo16" ref="489a7e1508ba71d4f8e998e74adb5d23" args="(FILE *fp, sndStereo16_t *x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVReadSampleStereo16           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndStereo16__t.html">sndStereo16_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion liest ein 16Bit Stereo Samplepaar aus Wavedatei ein</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#61bf5086dcfa9a798d93dac34d278479">sndWAVWriteSampleStereo16</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>- IN/OUT Zeiger auf Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0,:</em>&nbsp;</td><td>ok, -1: error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndStereo16_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleStereo16(fp, &amp;x))
+      { puts("error in sndWAVReadSampleStereo16");
+      }
+      // Abtastwertepaar verarbeiten...
+      if(0!=sndWAVWriteSampleStereo16(fp_out, x))
+      { puts("error in sndWAVReadSampleStereo16");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="7d32f371553b147f3b03e1fad5004d3d"></a><!-- doxytag: member="snd_lib.h::sndWAVReadSampleStereo8" ref="7d32f371553b147f3b03e1fad5004d3d" args="(FILE *fp, sndStereo8_t *x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVReadSampleStereo8           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndStereo8__t.html">sndStereo8_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion liest ein 8Bit Stereo Samplepaar aus Wavedatei ein</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#bc9c263172cf9d0460fc260045f07f85">sndWAVWriteSampleStereo8</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>_ IN/OUT Zeiger auf Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0,:</em>&nbsp;</td><td>ok, -1: error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndStereo8_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleStereo8(fp, &amp;x))
+      { puts("error in sndWAVReadSampleStereo8");
+      }
+      // Abtastwertepaar verarbeiten...
+      if(0!=sndWAVWriteSampleStereo8(fp_out, x))
+      { puts("error in sndWAVWriteSampleStereo8");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="1d1d719e2fee3951c891f4f08ae9d057"></a><!-- doxytag: member="snd_lib.h::sndWAVWriteFileHeader" ref="1d1d719e2fee3951c891f4f08ae9d057" args="(FILE *fp, sndWaveHeader_t wh)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVWriteFileHeader           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndWaveHeader__t.html">sndWaveHeader_t</a>&nbsp;</td>
+          <td class="paramname"> <em>wh</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion schreibt den WaveHeader in die bereits geoffnete Ausgabedatei. Die Datei bleibt danach geoeffnet. </dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd><ul>
+<li></li>
+</ul>
+</dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#a11738d497b2eb09a78699aaa68967f7">sndWAVReadFileHeader()</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf die bereits geoeffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>wh</em>&nbsp;</td><td>- IN Strukturuebergabe Daten des Header der Wavedatei</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+  sndWaveHeader_t wh;
+  FILE *fp;
+  ...
+  if(NULL == (fp = fopen("madonna.wav","wb")))
+  {  printf("error: cannot open file\n");
+     return -1;
+  }
+  // wh Struktur mit sinnvollen Daten fuellen...
+  if(0!=sndWAVWriteFileHeader(fp, wh))
+    puts("error in sndWAVWriteFileHeader");
+  ...
+  fclose(fp);
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="4d702223b436290f12cf745b2cbecc06"></a><!-- doxytag: member="snd_lib.h::sndWAVWriteSampleMono16" ref="4d702223b436290f12cf745b2cbecc06" args="(FILE *fp, sndMono16_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVWriteSampleMono16           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndMono16__t.html">sndMono16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion schreibt ein 16Bit Mono Sample in Ausgabedatei</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#91f25a866bc3fa0644126dfa703fd863">sndWAVReadSampleMono16</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>- IN, Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndMono16_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleMono16(fp, &amp;x))
+      { puts("error in sndWAVReadSampleMono16");
+      }
+      // Abtastwert verarbeiten...
+      if(0!=sndWAVWriteSampleMono16(fp_out, x))
+      { puts("error in sndWAVWriteSampleMono16");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="5ce04728bef45623fcbc68f2a622d9ef"></a><!-- doxytag: member="snd_lib.h::sndWAVWriteSampleMono8" ref="5ce04728bef45623fcbc68f2a622d9ef" args="(FILE *fp, sndMono8_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVWriteSampleMono8           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndMono8__t.html">sndMono8_t</a>&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion schreibt ein 8Bit Mono Sample in Ausgabedatei</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#55e8b650e99b9bb6ead4a8aff64e4de5">sndWAVReadSampleMono8</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>- IN, Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndMono8_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleMono8(fp, &amp;x))
+      { puts("error in sndWAVReadSampleMono8");
+      }
+      // Abtastwert verarbeiten...
+      if(0!=sndWAVWriteSampleMono8(fp_out, x))
+      { puts("error in sndWAVWriteSampleMono8");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="61bf5086dcfa9a798d93dac34d278479"></a><!-- doxytag: member="snd_lib.h::sndWAVWriteSampleStereo16" ref="61bf5086dcfa9a798d93dac34d278479" args="(FILE *fp, sndStereo16_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVWriteSampleStereo16           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndStereo16__t.html">sndStereo16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion schreibt ein 16Bit Stereo Samplepaar in Ausgabedatei</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#7d32f371553b147f3b03e1fad5004d3d">sndWAVReadSampleStereo8</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>- IN, Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndStereo16_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleStereo16(fp, &amp;x))
+      { puts("error in sndWAVReadSampleStereo16");
+      }
+      // Abtastwertepaar verarbeiten...
+      if(0!=sndWAVWriteSampleStereo16(fp_out, x))
+      { puts("error in sndWAVReadSampleStereo16");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="bc9c263172cf9d0460fc260045f07f85"></a><!-- doxytag: member="snd_lib.h::sndWAVWriteSampleStereo8" ref="bc9c263172cf9d0460fc260045f07f85" args="(FILE *fp, sndStereo8_t x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWAVWriteSampleStereo8           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>fp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsndStereo8__t.html">sndStereo8_t</a>&nbsp;</td>
+          <td class="paramname"> <em>x</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Description:</b></dt><dd>Funktion schreibt ein 8Bit Stereo Samplepaar in Ausgabedatei</dd></dl>
+<dl class="user" compact><dt><b>Used by:</b></dt><dd></dd></dl>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#7d32f371553b147f3b03e1fad5004d3d">sndWAVReadSampleStereo8</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fp</em>&nbsp;</td><td>- IN, Zeiger auf bereits geoffnete Datei </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>- IN, Abtastwert</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>0</em>&nbsp;</td><td>for ok, -1 on error</td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd></dd></dl>
+<div class="fragment"><pre class="fragment">
+   unsigned long i;
+   sndStereo8_t x;
+   FILE *fp, *fp_out;
+   ...
+   for(i=0; i&lt;sndWAVGetNumberOfSamples(wh); i++) // all samples
+   {  if(0!=sndWAVReadSampleStereo8(fp, &amp;x))
+      { puts("error in sndWAVReadSampleStereo8");
+      }
+      // Abtastwertepaar verarbeiten...
+      if(0!=sndWAVWriteSampleStereo8(fp_out, x))
+      { puts("error in sndWAVWriteSampleStereo8");
+      }
+    }
+    ...
+  </pre></div> 
+</div>
+</div><p>
+<a class="anchor" name="14c6c15584bcf0ee45f5e538da911745"></a><!-- doxytag: member="snd_lib.h::sndWrite" ref="14c6c15584bcf0ee45f5e538da911745" args="(SndDevice_t *sd, short *buf, int buf_elements)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sndWrite           </td>
+          <td>(</td>
+          <td class="paramtype">SndDevice_t *&nbsp;</td>
+          <td class="paramname"> <em>sd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&nbsp;</td>
+          <td class="paramname"> <em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buf_elements</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+<dl class="user" compact><dt><b>Beschreibung:</b></dt><dd>Schreibt blockierend auf die Soundkarte. Das Datenformat ist 16Bit mit Vorzeichen (signed short), die Abtastrate ist 44100kHz. Mono-Daten liegen nacheinander im short-Feld, Stereo-Daten liegen abwechselnd Links,Rechts im Feld. Ein Stereo-Wertepaar (Links,Rechts) zaehlt als zwei Elemente, da es zwei short-Speicherplaetze belegt.</dd></dl>
+Linux: die Anzahl der zu schreibenden Elemente ist nicht beliebig, auf manchen Rechner kam es zu Abstuerzen, wenn die Puffergroesse kleiner war als der intern Soundkartenpuffer. Als guenstig hat sich eine Puffergroesse von 4096 Byte oder vielfache davon erwiesen. Das short-Feld sollte also mindestens 2048 Elemente haben.<p>
+<dl class="see" compact><dt><b>Siehe auch:</b></dt><dd><ul>
+<li><a class="el" href="snd__lib_8h.html#c5c62b469c04a05588c4dd5034b6d929">sndRead</a>, <a class="el" href="snd__lib_8h.html#c6bde40d15c6a60600e18e4c6ec77ce6">sndOpen</a></li>
+</ul>
+</dd></dl>
+<dl compact><dt><b>Parameter:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sd</em>&nbsp;</td><td>- Zeiger auf Geraetestruktur der geoffneten Soundkarte </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buf</em>&nbsp;</td><td>- Zeiger auf Puffer mit den zu schreibenden Daten </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buf_elements</em>&nbsp;</td><td>- Anzahl der Speicherplaetze im short-Feld</td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Rückgabewerte:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>Anzahl</em>&nbsp;</td><td>der geschriebenen Feldelemente oder negative Zahl bei Fehler. </td></tr>
+  </table>
+</dl>
+<dl class="user" compact><dt><b>Beispiel :</b></dt><dd>Die Soundkarte wird zum Lesen und Schreiben geoeffnet. In einer Schleife werden Daten aufgenommen und gleich wieder ausgegeben. <div class="fragment"><pre class="fragment">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "snd_lib.h"
+#define N 2048
+
+int main(void)
+{   SndDevice_t *psd;
+    short buf[N];
+    int j;
+
+    psd = sndOpen(SND_READ_WRITE, SND_STEREO);
+    for(j=0; j&lt;500; j++)
+    {   printf("loop counter:%d\n", j);
+        if(N != sndRead(psd, buf, N))
+        {   printf("win_sndRead crashed...");
+        }
+        if(N != sndWrite(psd, buf, N))
+        {   printf("sndWrite crashed...");
+        }
+    }
+    psd = sndClose(psd);
+    return 0;
+}
+  </pre></div> </dd></dl>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Erzeugt am Thu Apr 19 15:53:05 2012 für snd_lib von&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>
